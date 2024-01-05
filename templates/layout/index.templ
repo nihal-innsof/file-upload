@@ -1,0 +1,24 @@
+package layout
+
+import "nihal-innsof/file-upload/templates/components"
+
+templ Index() {
+<html>
+
+<head>
+  <title>File Upload</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="main-section flex flex-col h-screen w-screen items-center p-4 bg-slate-900 ">
+    @components.DropRegion()
+    // <button class="mt-20 xl:w-32 xl:h-10 w-96 h-20 xl:text-lg text-2xl border-2 p-2 rounded-lg bg-blue-400 text-white hover:border-blue-500">Upload File</button>
+  </div>
+</body>
+
+</html>
+}

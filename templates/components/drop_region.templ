@@ -1,0 +1,17 @@
+package components
+
+templ DropRegion() {
+<div
+  class="flex flex-column h-2/3 justify-center items-center mt-20 border-2 w-full xl:w-2/4 rounded-xl border-slate-800 text-white">
+  <form action="" id="form" hx-encoding='multipart/form-data' hx-post='/upload'>
+    <input type="file" name="file" />
+    <button>Upload</button>
+    <progress max="100" value="0" id="progress"></progress>
+  </form>
+</div>
+<script>
+  htmx.on('#form', 'htmx:xhr:progress', function (evt) {
+    htmx.find('#progress').setAttribute('value', evt.detail.loaded / evt.detail.total * 100)
+  });
+</script>
+}
