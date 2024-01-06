@@ -3,9 +3,13 @@ package components
 templ DropRegion() {
 <div
   class="flex flex-column h-2/3 justify-center items-center mt-20 border-2 w-full xl:w-2/4 rounded-xl border-slate-800 text-white">
-  <form action="" id="form" hx-encoding='multipart/form-data' hx-post='/upload'>
-    <input type="file" name="file" />
-    <button>Upload</button>
+  <form class="flex flex-col justify-center items-center" action="" id="form" hx-encoding="multipart/form-data"
+    hx-post="/upload">
+    <div class="custom-file-upload border-2 border-white p-1 rounded-xl mb-3 cursor-pointer">
+      <input type="file" name="file" />
+      //Choose file
+    </div>
+    <button class="px-3 p-1 bg-blue-500 rounded-xl my-6">Upload</button>
     <progress max="100" value="0" id="progress"></progress>
   </form>
 </div>

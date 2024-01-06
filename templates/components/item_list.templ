@@ -1,0 +1,9 @@
+package components
+
+templ ItemList(items []string) {
+<ul class="text-white">
+  for _, item := range items {
+  <li>{ item }</li>
+  }
+</ul>
+}

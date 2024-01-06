@@ -23,7 +23,7 @@ func DropRegion() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"flex flex-column h-2/3 justify-center items-center mt-20 border-2 w-full xl:w-2/4 rounded-xl border-slate-800 text-white\"><form action=\"\" id=\"form\" hx-encoding=\"multipart/form-data\" hx-post=\"/upload\"><input type=\"file\" name=\"file\"> <button>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"flex flex-column h-2/3 justify-center items-center mt-20 border-2 w-full xl:w-2/4 rounded-xl border-slate-800 text-white\"><form class=\"flex flex-col justify-center items-center\" action=\"\" id=\"form\" hx-encoding=\"multipart/form-data\" hx-post=\"/upload\"><div class=\"custom-file-upload border-2 border-white p-1 rounded-xl mb-3 cursor-pointer\"><input type=\"file\" name=\"file\"></div><button class=\"px-3 p-1 bg-blue-500 rounded-xl my-6\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
